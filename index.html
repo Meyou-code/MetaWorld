@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta World</title>
+    <link rel="icon" href="imgs/logo_default.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <style>
+        
+        #esteregg {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            z-index: 999; 
+            max-width: 300px; 
+            border-radius: 15px; 
+        }
+    </style>
+</head>
+<body>
+
+
+<script>
+    var clicsTotal = 0;
+
+    function afficherImage() {
+        clicsTotal++;
+
+        if (clicsTotal === 10) {
+     
+            var image = document.getElementById("esteregg");
+
+
+            image.style.display = "block";
+
+
+            setTimeout(function () {
+                image.style.display = "none";
+                clicsTotal = 0;
+            }, 3000); 
+        }
+    }
+
+
+    document.addEventListener("click", afficherImage);
+</script>
+
+
+<img id="esteregg" src="imgs/random.jpg" alt="esteregg">
+
+
+
+</body>
+</html>
+
+
+
+    <header>
+        <img class="banner" src="imgs/banner.png" alt="Bannière de la Boutique en Ligne">
+    </header>
+
+    <div class="navigation-buttons">
+        <a href="https://discord.gg/metaworld" target="url_invite">Discord <img src="imgs/discord_logo.png" alt="Discord"></a>
+        <a href="https://www.tiktok.com/@metaworldrp" target="url_invite">TikTok <img src="imgs/tiktok_icon.png" alt="TikTok"></a>
+        <a href="Rules.html">Rules <img src="imgs/rules_icon.png" alt="Rules"></a>
+        <a href="#shop">Shop <img src="imgs/shop_icon.png" alt="Shop"></a>
+        <a href="https://discord.com/channels/1098717117240574042/1166518194010337391" target="url_invite">FeedBack <img src="imgs/feedback_icon.png" alt="Discord"></a>
+        
+    </div>
+
+
+    <div class="spacer"></div>
+
+    <!-- Image Section 1 -->
+    <div class="image-section">
+        <img src="imgs/gta_rp.png" alt="Description de l'image">
+        <div class="text-container">
+            <p class="image-question">Qu'est-ce que Meta World 🌍 ?</p>
+            <p class="additional-text">Bienvenue sur Meta World, le serveur GTA Rp qui redéfinit votre expérience de jeu. Plongez dans une métropole dynamique, créez votre propre destinée, formez des alliances stratégiques, et explorez un monde persistant où l'imagination n'a pas de limites. Rejoignez notre communauté accueillante dès maintenant et forgez votre propre histoire dans l'univers unique de Meta World.</p>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="title-features">
+        <h1 class="features-heading">Features</h1>
+        <p class="subtitle-features">*Toutes les fonctionnalités ne sont pas mentionnées ici</p>
+    </div>
+
+    <section>
+        <!-- 1ère card -->
+        <div class="card1">
+            <img src="imgs/shield_icon.png" alt="Logo" class="shield_icon">
+            <h3 style="margin-top: 1px;">Anti Cheat</h3>
+            <p>Notre Anti Cheat assure un jeu fluide, stable et équitable grâce à une technologie avancée de détection de triche.</p>
+        </div>
+
+        <!-- 2ème card -->
+        <div class="card2">
+            <img src="imgs/flash_icon.png" alt="Logo" class="flash_icon">
+            <h3 style="margin-top: 1px;">Serveur rapide</h3>
+            <p>Doté d'un code super optimisé pour un impact minimal sur le serveur et offrant une expérience de jeu parfaitement fluide.</p>
+        </div>
+
+        <!-- 3ème card -->
+        <div class="card3">
+            <img src="imgs/settings_icon.png" alt="Logo" class="settings_icon">
+            <h3 style="margin-top: 1px;">Fonctionnalités</h3>
+            <p>Découvrez les nombreuses fonctionnalités soigneusement développées par l'équipe de Meta World</p>
+        </div>
+    </section>
+
+    <div class="spacer"></div>
+
+    <div class="shop-title">
+        <h1>Meta Shop</h1>
+        <img src="imgs/shop_icon2.png" alt="shop_logo" class="shop-logo">
+    </div>
+
+    <div id="shop">
+        <section>
+            <!-- Grade Silver -->
+            <a href="vip_silver.html" class="product">
+                <img src="imgs/logo_silver.png" alt="VIP1">
+                <h1 class="vip silver">VIP Silver</h1>
+                <p><span class="vip silver">Prix : €4.99</span></p>
+            </a>
+            <!-- Grade Gold -->
+            <a href="vip_gold.html" class="product">
+                <img src="imgs/logo_gold.png" alt="VIP2">
+                <h1 class="vip gold">VIP Gold</h1>
+                <p><span class="vip gold">Prix : €9.99</span></p>
+            </a>
+            <!-- Grade Emerald -->
+            <a href="vip_emerald.html" class="product">
+                <img src="imgs/logo_green.jpg" alt="VIP3">
+                <h1 class="vip emerald">VIP Emerald</h1>
+                <p><span class="vip emerald">Prix : €19.99</span></p>
+            </a>
+            <!-- Grade Meta -->
+            <a href="vip_meta.html" class="product">
+                <img src="imgs/logo_default.png" alt="VIP4">
+                <h1 class="vip meta">VIP Meta</h1>
+                <p><span class="vip meta">Prix : €39.99</span></p>
+            </a>
+            <!-- Grade Ultra -->
+            <a href="vip_ultra.html" class="product">
+                <img src="imgs/logo_red.jpg" alt="VIP5">
+                <h1 class="vip ultra">VIP Ultra</h1>
+                <p><span class="vip ultra">Prix : €79.99</span></p>
+            </a>
+        </section>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div>
+        <p class="subtitle-features" style="font-size: 15px; margin-top: -140px;">*L'achat des Grades VIP soutient et finance les développeurs ainsi que le staff de Meta World, alors n'hésitez pas à nous soutenir 💗</p>
+    </div>
+
+    <div class="spacer"></div>
+
+    <footer id="footer">
+        <p class="copyright">2024 Meta World 🌍 Tout droit réservés, Nous ne sommes pas affiliés à Rockstar.</p>
+    </footer>
+
+    <script>
+        window.onscroll = function () {
+            var footer = document.getElementById('footer');
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                footer.style.transform = 'translateY(0)';
+            } else {
+                footer.style.transform = 'translateY(100%)';
+            }
+        };
+    </script>
+    
+
+    
+
+    
+</body>
+</html>
