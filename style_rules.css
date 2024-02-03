@@ -120,3 +120,17 @@ footer {
 .spacer {
     margin-bottom: 45px; 
   }
+
+
+  ::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #15365a; 
+    border-radius: 3px; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1d1d1d; 
+}
